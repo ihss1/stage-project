@@ -1,0 +1,45 @@
+.pop-up-button {
+    border-radius: 7px;
+    width: 80px;
+    height: 32px;
+    background: white;
+    border: 1px solid #ffffff;
+}
+
+.form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 20;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-popup form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-popup input,
+.form-popup select {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #0e79b2;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.form-popup button {
+    border-radius: 7px;
+    width: 80px;
+    height: 32px;
+    background: white;
+    border: 1px solid #3884be;
+}
+

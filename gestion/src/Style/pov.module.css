@@ -1,0 +1,224 @@
+.body {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.pov-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    left: 30px;
+}
+
+.Pov {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.addbtn{
+    border-radius: 7px;
+    width: 80px;
+    height: 32px;
+    background: white;
+    border-color: #3884be;
+    position: relative;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+.pop-up-button{
+    border-radius: 7px;
+    width: 80px;
+    height: 32px;
+    background: white;
+    border: 1px solid #ffffff;
+}
+
+.form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 30; /* Ensure the popup is above the content and the blur background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.form-popup form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-popup input,
+.form-popup select {
+    width: 100%;
+}
+
+.form-popup button {
+    border-radius: 7px;
+    width: 80px;
+    height: 32px;
+    background: white;
+    border: 1px solid #3884be;
+}
+.form input,
+.form select {
+    border-radius: 5px;
+    border-color: #0e79b2;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #0e79b2;
+    flex-basis: calc(20% - 20px); /* 20% width with gap of 15px */
+}
+
+.form button {
+    border-radius: 7px;
+    width: 80px;
+    height: 32px;
+    background: white;
+    border-color: #3884be;
+    position: relative;
+    top: 8px;
+}
+
+.searchForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.react-datepicker {
+    position: absolute;
+    right: calc(20% + 105px); /* Adjusted this value */
+    top: 100%; /* Position below the input field */
+    z-index: 1; /* Ensure the date picker appears above other content */
+}
+
+.pov-responsive-table {
+    width: 99%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.close-btn{
+    position: relative;
+    bottom: 24px;
+    left: 105px;
+}
+
+.table-header {
+    background-color: #0e79b2;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.table-header th {
+    padding: 10px;
+}
+
+.table-row {
+    background-color: #ffffff;
+}
+
+.table-row:hover {
+    background-color: #f2f2f2;
+}
+
+
+.col {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+}
+
+.col:first-child {
+    border-left: 1px solid #dddddd;
+}
+
+.col:last-child {
+    border-right: 1px solid #dddddd;
+}
+
+.col button {
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border-color: #3884be;
+}
+.pagination {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure the pagination buttons appear on top of other content */
+}
+
+.pagination button {
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 5px 10px;
+    color: #333333;
+    margin-left: 10px;
+}
+
+.pagination button:first-child {
+    margin-left: 0;
+}
+
+.pagination button:hover {
+    background-color: #f2f2f2;
+}
+
+.edit-input {
+    width: 100%; /* Make the input fields take up the entire width of the table cell */
+    max-width: 200px; /* Set a maximum width for the input fields */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.form-button-container {
+    display: flex;
+    align-items: center; /* Align buttons vertically */
+}
+
+.edit-input-btn {
+    border-radius: 7px;
+    width: auto; /* Allow buttons to adjust their width based on content */
+    height: 32px;
+    border-color: #3884be;
+    margin-right: 10px; /* Add margin between buttons */
+}
+
+.button-space {
+    flex-grow: 1; 
+}
+
+.delete-input-btn {
+    border-color: #d61313 !important; 
+}

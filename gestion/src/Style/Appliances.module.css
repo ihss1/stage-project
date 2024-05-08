@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.appl-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+
+}
+.appl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+
+.blur {
+    position: absolute; 
+    top: 0;
+    left: 10;
+    width: 200%;
+    height: 100%;
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px); 
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white to enhance blur effect */
+    
+}
+.form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 20; /* Ensure it's above the background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.form-popup form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-popup input,
+.form-popup select {
+    width: 100%;
+}
+
+.form-popup button {
+    border-radius: 7px;
+    width: 80px;
+    height: 32px;
+    background: white;
+    border: 1px solid #3884be;
+    position: relative;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input,
+.form select {
+    border-radius: 5px;
+    border: 1px solid #0e79b2;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.form button {
+    border-radius: 7px;
+    width: 80px;
+    height: 32px;
+    background: white;
+    border: 1px solid #3884be;
+}
+
+.close-btn{
+    position: relative;
+    bottom: 47px;
+    left: 105px;
+}
+.appl-responsive-table {
+    width: 120%;
+    margin: auto; 
+    margin-top: 6px; 
+    margin-left: -85px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.table-header {
+    background-color: #0e79b2;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.table-header th {
+    padding: 10px;
+}
+
+.table-row {
+    background-color: #ffffff;
+}
+
+.table-row:hover {
+    background-color: #f2f2f2;
+}
+
+.col {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+}
+
+.col:first-child {
+    border-left: 1px solid #dddddd;
+}
+
+.col:last-child {
+    border-right: 1px solid #dddddd;
+}
+
+.col button {
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    padding: 5px 10px;
+    border: 1px solid #3884be;
+    margin-right: 10px;
+}
+
+.col button:hover {
+    background-color: #f2f2f2;
+}
+
+.pagination {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.pagination button {
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 5px 10px;
+    color: #333333;
+    margin-left: 10px;
+}
+
+.pagination button:first-child {
+    margin-left: 0;
+}
+
+.pagination button:hover {
+    background-color: #f2f2f2;
+}
+
+/* Edit Input Styles */
+.edit-input {
+    border-radius: 5px;
+    border: 1px solid #0e79b2;
+    padding: 5px 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+/* Button Container Styles */
+.form-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.edit-input-btn {
+    border-radius: 7px;
+    width: 80px;
+    height: 32px;
+    border: 1px solid #3884be;
+    margin-right: 10px;
+}
+
+.delete-input-btn {
+    border-color: #d61313 !important;
+}
+
+.link {
+    color: #0e79b2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

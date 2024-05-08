@@ -1,0 +1,39 @@
+.srch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 25px;
+    
+}
+.srchid{
+    color: #0e79b2;
+    margin-left: 5px;
+}
+.profile-card{
+    background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 166, 255, 0.2);
+	display: flex;
+	margin: 20px;
+	overflow: hidden;
+    height: 500px;
+	width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+strong{
+    color: #0e79b2;
+}
+ul{
+    list-style: none;
+}
+li{
+    line-height: 44px;
+}

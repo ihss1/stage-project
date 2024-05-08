@@ -1,0 +1,63 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clnt-dtl{
+  position: relative;
+  top: 36px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.centeredTable {
+  text-align: center;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+.profile-card{
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 166, 255, 0.2);
+  display: flex;
+  margin: 20px;
+  overflow: hidden;
+  height: 350px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+.labels {
+  color: #0e79b2;
+  padding-right: 10px;
+  text-align: right; /* Align label text to the right */
+}
+
+.info {
+  padding-left: 10px;
+  margin-top: 5px;
+  text-align: left; /* Align info text to the left */
+}
+
+.labelInfoContainer {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  width: 100%;
+  max-width: 400px; /* Set maximum width for label-info pair */
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
